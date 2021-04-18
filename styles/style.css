@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
 
+body {
+  margin: 0;
+  overflow-x: hidden !important;
+}
+
 /* nav */
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
   background-image: url('../images/icon-close.svg');
 }
+
  .navbar-toggler[aria-expanded="false"] .navbar-toggler-icon{
   background-image: url('../images/icon-hamburger.svg');
 }
@@ -50,6 +56,15 @@ ul {
 
 .socials {
   display: flex;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @media screen and (max-width: 1023px) {
