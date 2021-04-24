@@ -13,6 +13,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,8 +23,10 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+}
+
+.wrapper {
   overflow-x: hidden !important;
-  scroll-behavior: smooth;
 }
 
 /* Utilities */
@@ -94,7 +97,7 @@ nav {
   border-bottom: 3px solid transparent;
   justify-self: stretch;
   margin: 0 15px;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 .nav-link a {
@@ -103,8 +106,13 @@ nav {
 }
 
 .nav-link:hover {
+  color: var(--darkBlue);
   border-bottom-color: var(--limeGreen);
   transition: border-bottom-color 0.4s ease-in;
+}
+
+.nav-link a:hover {
+  color: var(--darkBlue);
 }
 
 .hide {
@@ -179,11 +187,11 @@ nav {
 #blog {
   padding: 50px 0 100px;
 }
-
+/* 
 #blog .row {
   align-items: center;
   width: 100%;
-}
+} */
 
 #blog .heading {
   font-size: 36px;
@@ -304,7 +312,7 @@ path icon:hover {
   }
 
   .show {
-      display: block;
+    display: block;
   }
 
   /* Intro section */
@@ -339,24 +347,3 @@ path icon:hover {
     margin: 15px 0;
   }
 }
-
-/* 
-@media screen and (max-width: 1023px) {
-  .home-wrapper {
-    height: 100vh;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1199px) {
-  .home-wrapper {
-    height: 50vh;
-  }
-
-  .bg-image {
-    background-image: url("../images/bg-intro-desktop.svg");
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-  }
-} */
