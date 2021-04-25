@@ -52,6 +52,10 @@ body {
   opacity: 0.7;
 }
 
+.btn:focus {
+  box-shadow: none !important;
+}
+
 .btn-gradient-bg {
   background-image: linear-gradient(
     to right,
@@ -100,16 +104,12 @@ nav {
 }
 
 .menu .nav-link a:hover {
-  color: var(--grayishBlue);
+  color: var(--darkBlue);
 }
 
 .menu .nav-link:hover {
   border-bottom-color: var(--limeGreen);
   transition: border-bottom-color 0.4s ease-in;
-}
-
-.nav-link a:hover {
-  color: var(--darkBlue);
 }
 
 .hide {
@@ -134,7 +134,6 @@ nav {
   height: 135%;
   position: absolute;
   width: 100%;
-  left: 16%;
 }
 
 /* Home Section */
@@ -282,10 +281,6 @@ footer {
 
   .heading {
     font-size: 36px;
-  }
-
-  .service-description {
-      width: 50%
   }
 
   /* Footer */
